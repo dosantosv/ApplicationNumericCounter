@@ -1,0 +1,57 @@
+﻿<Window x:Class="ApplicationNumberCounter.NumberCounterView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ApplicationNumberCounter"
+        mc:Ignorable="d"
+        Title="NumberCounterView" Height="400" Width="600" Background="#f7f7f7"
+        ResizeMode="NoResize"
+        >
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+
+        <TextBlock x:Name="txtCounter" 
+                   Text="0" 
+                   FontSize="100" 
+                   FontWeight="Bold" 
+                   Foreground="#333" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top"
+                   Margin="0,-78,0,0"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,60,0,0">
+            
+            <Button Content="-" Width="80" Height="80" FontSize="36" Margin="20" 
+                    Click="Button_Decrease_Click" 
+                    Background="#e74c3c" 
+                    Foreground="White" 
+                    BorderBrush="#e74c3c" 
+                    BorderThickness="0" 
+                    Padding="10"
+                    FontWeight="Bold"
+                    Cursor="Hand"/>
+
+            <Button Content="+" Width="80" Height="80" FontSize="36" Margin="20" 
+                    Click="Button_Increase_Click" 
+                    Background="#2ecc71" 
+                    Foreground="White" 
+                    BorderBrush="#2ecc71" 
+                    BorderThickness="0" 
+                    Padding="10"
+                    FontWeight="Bold"
+                    Cursor="Hand"/>
+        </StackPanel>
+        
+        <Button Content="Zerar Contador"  Margin="0,185,0,0" Height="80" Width="160"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"
+                Click="Button_Reset_Click"
+                Background="#c0c0c0" 
+                Foreground="White" 
+                BorderBrush="#c0c0c0" 
+                BorderThickness="0" 
+                Padding="10"
+                FontWeight="Bold"
+                Cursor="Hand"/>
+    </Grid>
+</Window>

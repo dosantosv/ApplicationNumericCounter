@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ApplicationNumberCounter/1.0.0": {
+        "runtime": {
+          "ApplicationNumberCounter.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ApplicationNumberCounter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
